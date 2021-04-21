@@ -62,7 +62,7 @@ scene.add(pointLightHelper2)
 
 // Ligt 3
 // Adds a custom light
-const pointLight3 = new THREE.PointLight(0xff0000, 0.1)
+const pointLight3 = new THREE.PointLight(0xb1fc, 0.1)
 pointLight3.position.set(1.86, -1, -1.65)
 pointLight3.intensity = 2
 scene.add(pointLight3)
@@ -73,6 +73,13 @@ light3.add(pointLight3.position, 'y').min(-3).max(3).step(0.1)
 light3.add(pointLight3.position, 'x').min(-6).max(3).step(0.1)
 light3.add(pointLight3.position, 'z').min(-3).max(3).step(0.1)
 light3.add(pointLight3, 'intensity').min(0).max(10).step(0.1)
+// Set custom color
+
+const light3color = {
+    color: 0x0000ff
+}
+light3.addColor(light3color, 'color').onChange(() => pointLight3.color.set(light3color.color))
+
 
 const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
 scene.add(pointLightHelper3)
