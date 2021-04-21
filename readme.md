@@ -7,7 +7,7 @@
 
 ## Deployment
 
-- Checkout deployment at <https://gagandeep39.github.io/>
+- Checkout deployment at <https://gagandeep39.github.io/threejs-sphere-demo/>
 
 ## Description
 
