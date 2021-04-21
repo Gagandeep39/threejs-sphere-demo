@@ -39,14 +39,43 @@ pointLight.position.y = 3
 pointLight.position.z = 4
 scene.add(pointLight)
 
+
 // Adds a custom light
 const pointLight2 = new THREE.PointLight(0xff0000, 0.1)
-pointLight2.position.set(1, 1,1)
+pointLight2.position.set(-1.86, 1, -1.65)
 pointLight2.intensity = 2
 scene.add(pointLight2)
+const light2 = gui.addFolder('Light 2')
 
 // Add a controller top change vlue
-gui.add(pointLight2.position, 'y').min(-3).max(3).step(0.1)
+light2.add(pointLight2.position, 'y').min(-3).max(3).step(0.1)
+light2.add(pointLight2.position, 'x').min(-6).max(3).step(0.1)
+light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.1)
+light2.add(pointLight2, 'intensity').min(0).max(10).step(0.1)
+
+const light2color = {
+    color: 0xff0000
+}
+light2.addColor(light2color, 'color').onChange(() => pointLight2.color.set(light2color.color))
+const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
+scene.add(pointLightHelper2)
+
+// Ligt 3
+// Adds a custom light
+const pointLight3 = new THREE.PointLight(0xff0000, 0.1)
+pointLight3.position.set(1.86, -1, -1.65)
+pointLight3.intensity = 2
+scene.add(pointLight3)
+const light3 = gui.addFolder('Light 3')
+
+// Add a controller top change vlue
+light3.add(pointLight3.position, 'y').min(-3).max(3).step(0.1)
+light3.add(pointLight3.position, 'x').min(-6).max(3).step(0.1)
+light3.add(pointLight3.position, 'z').min(-3).max(3).step(0.1)
+light3.add(pointLight3, 'intensity').min(0).max(10).step(0.1)
+
+const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
+scene.add(pointLightHelper3)
 
 
 /**
@@ -91,7 +120,7 @@ scene.add(camera)
  */
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas,
-    alpha: true // Background transparent
+    // alpha: true // Background transparent
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
