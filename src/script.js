@@ -45,18 +45,18 @@ const pointLight2 = new THREE.PointLight(0xff0000, 0.1)
 pointLight2.position.set(-1.86, 1, -1.65)
 pointLight2.intensity = 2
 scene.add(pointLight2)
-const light2 = gui.addFolder('Light 2')
+// const light2 = gui.addFolder('Light 2')
 
 // Add a controller top change vlue
-light2.add(pointLight2.position, 'y').min(-3).max(3).step(0.1)
-light2.add(pointLight2.position, 'x').min(-6).max(3).step(0.1)
-light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.1)
-light2.add(pointLight2, 'intensity').min(0).max(10).step(0.1)
+// light2.add(pointLight2.position, 'y').min(-3).max(3).step(0.1)
+// light2.add(pointLight2.position, 'x').min(-6).max(3).step(0.1)
+// light2.add(pointLight2.position, 'z').min(-3).max(3).step(0.1)
+// light2.add(pointLight2, 'intensity').min(0).max(10).step(0.1)
 
-const light2color = {
-    color: 0xff0000
-}
-light2.addColor(light2color, 'color').onChange(() => pointLight2.color.set(light2color.color))
+// const light2color = {
+//     color: 0xff0000
+// }
+// light2.addColor(light2color, 'color').onChange(() => pointLight2.color.set(light2color.color))
 // const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
 // scene.add(pointLightHelper2)
 
@@ -66,19 +66,19 @@ const pointLight3 = new THREE.PointLight(0xb1fc, 0.1)
 pointLight3.position.set(1.86, -1, -1.65)
 pointLight3.intensity = 2
 scene.add(pointLight3)
-const light3 = gui.addFolder('Light 3')
+// const light3 = gui.addFolder('Light 3')
 
 // Add a controller top change vlue
-light3.add(pointLight3.position, 'y').min(-3).max(3).step(0.1)
-light3.add(pointLight3.position, 'x').min(-6).max(3).step(0.1)
-light3.add(pointLight3.position, 'z').min(-3).max(3).step(0.1)
-light3.add(pointLight3, 'intensity').min(0).max(10).step(0.1)
-// Set custom color
+// light3.add(pointLight3.position, 'y').min(-3).max(3).step(0.1)
+// light3.add(pointLight3.position, 'x').min(-6).max(3).step(0.1)
+// light3.add(pointLight3.position, 'z').min(-3).max(3).step(0.1)
+// light3.add(pointLight3, 'intensity').min(0).max(10).step(0.1)
+// // Set custom color
 
-const light3color = {
-    color: 0x0000ff
-}
-light3.addColor(light3color, 'color').onChange(() => pointLight3.color.set(light3color.color))
+// const light3color = {
+//     color: 0x0000ff
+// }
+// light3.addColor(light3color, 'color').onChange(() => pointLight3.color.set(light3color.color))
 
 
 // const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
