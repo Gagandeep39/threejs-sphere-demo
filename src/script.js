@@ -57,8 +57,8 @@ const light2color = {
     color: 0xff0000
 }
 light2.addColor(light2color, 'color').onChange(() => pointLight2.color.set(light2color.color))
-const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
-scene.add(pointLightHelper2)
+// const pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 1)
+// scene.add(pointLightHelper2)
 
 // Ligt 3
 // Adds a custom light
@@ -81,8 +81,8 @@ const light3color = {
 light3.addColor(light3color, 'color').onChange(() => pointLight3.color.set(light3color.color))
 
 
-const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
-scene.add(pointLightHelper3)
+// const pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 1)
+// scene.add(pointLightHelper3)
 
 
 /**
