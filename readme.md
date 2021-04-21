@@ -1,17 +1,20 @@
-# Three.js Starter
-Courtesy of Bruno Simon of https://threejs-journey.xyz/
+# ThreeJS Sphere
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+- [ThreeJS Sphere](#threejs-sphere)
+  - [Deployment](#deployment)
+  - [Description](#description)
+  - [Screenshots](#screenshots)
 
-``` bash
-# Install dependencies (only the first time)
-npm install
+## Deployment
 
-# Run the local server at localhost:8080
-npm run dev
+- Checkout deployment at <https://gagandeep39.github.io/>
 
-# Build for production in the dist/ directory
-npm run build
-```
+## Description
+
+- A simple Object using Three JS
+
+## Screenshots
+
+![Screenshot 1](./assets/screenshot_1.png)
+![Screenshot 2](./assets/screenshot_2.png)
+![Screenshot 3](./assets/screenshot_3.png)
